@@ -1,0 +1,148 @@
+:root {
+  --blue: #3ab4f2;
+  --red: #eb4747;
+  --black: #06283d;
+  --grey: #46525d;
+}
+
+.blueBG {
+  background-color: var(--blue);
+}
+
+.redBG {
+  background-color: var(--red);
+}
+
+.blackBG {
+  background-color: var(--black);
+}
+
+body,
+li,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 15px "Open Sans";
+}
+
+h1 {
+  font-size: 200%;
+}
+h2 {
+  font-size: 150%;
+}
+h3 {
+  font-size: 100%;
+}
+h4 {
+  font-size: 80%;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--blue);
+  padding: 50px;
+  margin-bottom: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 20px;
+  border: none;
+}
+
+fieldset > input {
+  padding: 10px;
+  margin: 5px;
+  min-width: 50%;
+  height: auto;
+}
+
+fieldset > h2 {
+  color: var(--grey);
+  text-align: center;
+}
+
+input {
+  border: none;
+  border-radius: 30px;
+}
+
+input[type="text"] {
+  border: 1px solid #dadada;
+}
+
+input[type="button"] {
+  font-size: larger;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+input[type="button"]:hover {
+  background-color: var(--black);
+}
+
+.listBarang {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 50px 0;
+  color: var(--black);
+}
+
+.listBarang h2 {
+  color: var(--grey);
+}
+
+.listBarang #dataBarang {
+  font: bold 20px "Open Sans";
+  text-align: left;
+  min-width: 80%;
+}
+
+#dataBarang > li {
+  display: flex;
+  text-transform: capitalize;
+  padding: 10px;
+  border-bottom: 1px solid #dadada;
+}
+
+#dataBarang > li span {
+  margin-left: 20px;
+  width: 90%;
+}
+
+#dataBarang > li a {
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+.button:hover {
+  background-color: var(--black);
+}
